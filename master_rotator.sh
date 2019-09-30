@@ -2,7 +2,7 @@
 # this bad boy will check the db for read only status by `SELECT @@global.read_only;`
 # and if the read_only value is 0 we will rotate, other wise we won't.
 # pretty simple eh?
-# nh@nasa
+# nh
 
 DB_READ=`mysql --login-path=backup -s -N -e "SELECT @@global.read_only;"`
 
